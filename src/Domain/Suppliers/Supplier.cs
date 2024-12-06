@@ -5,9 +5,8 @@ namespace POS.Domain.Suppliers;
 
 public class Supplier : Entity<int>
 {
-    public int CompanyId { get; set; }
-    public ContactPerson? ContactPerson { get; set; }
+    public string? Name { get; set; }
+    public string? Phone { get; set; }
     public Address? Address { get; set; }
-    public virtual Company? Company { get; }
     private Supplier() { }
 }
