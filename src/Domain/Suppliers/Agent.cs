@@ -7,7 +7,6 @@ public class Agent : Entity<int>
 {
     public int SupplierId { get; set; }
     public ContactPerson? ContactPerson { get; set; }
-    public Address? Address { get; set; }
     public virtual Supplier? Company { get; }
     private Agent() { }
 }
