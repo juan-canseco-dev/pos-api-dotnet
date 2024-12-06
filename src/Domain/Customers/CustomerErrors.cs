@@ -26,7 +26,7 @@ public static class CustomerErrors
     public static Error ContactPersonPhoneAlreadyExists(ContactPerson contactPerson)
     {
         return new Error(
-            Code: "Customer.CotactPerson.Phone.AlreadyExists",
+            Code: "Customer.ContactPerson.Phone.AlreadyExists",
             Description: $"The specified ContactPerson.Phone: {contactPerson}  has already been used by another user.",
             ErrorType: Error.Type.Domain
         );
