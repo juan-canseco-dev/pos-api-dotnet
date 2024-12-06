@@ -1,8 +1,9 @@
-﻿using POS.Domain.Shared;
+﻿using POS.Domain.Abstractions;
+using POS.Domain.Shared;
 
 namespace POS.Domain.Customers;
 
-public class Customer
+public class Customer : Entity<int>
 {
     public string? IdentificationCode { get; set; }
     public ContactPerson? ContactPerson { get; set; }
